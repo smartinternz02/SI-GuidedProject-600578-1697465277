@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="content">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <p><strong>Location:</strong> <span class="address">VIT-AP University, G-30, Inavolu, Beside AP Secretariat Amaravati, Andhra Pradesh 522237</span></p>
+            <p><strong>Email:</strong><span class="address">saikrishna.21bce9041@vitapstudent.ac.in, pavankumar.21bce9495@vitapstudent.ac.in</span> </p>
+            <p><strong>Call:</strong><span class="address"> 9014384609</span></p>
+        </div>
+        
+
+        <form class="contact-form" action="/submit_contact" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required><br>
+            <input type="text" name="last_name" placeholder="Last Name" required><br>
+            <input type="text" name="subject" placeholder="Subject" required><br>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+        
+        <a href="/">Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>
